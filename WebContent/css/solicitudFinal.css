@@ -1,0 +1,75 @@
+body{
+	background: #80CBC4;
+}
+.botonPropina{
+				border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding:6px;
+	font-family: helvetica;
+	font-weight : bold;
+	color:dimgray;
+		background-color:#FFE57F ;
+	width:300px;
+	position:absolute;
+	top:75%;
+	left:50%;
+}
+
+h1{
+	position:absolute;
+	top:12px;
+	left: 28%;
+	font-size: 40px;
+	font-family:helvetica;
+	color:#FFE57F;
+}
+
+h2{	
+	position:absolute;
+	top:25%;
+	left: 7%;
+	font-family: Brush Script MT;
+	font-size: 40px;
+}
+
+.textFin{
+	position:absolute;
+	top:40%;
+	left: 8%;
+	
+}
+
+.tarjeta{
+	position:absolute;
+	top:40%;
+	left: 55%;
+}
+
+.textFin2{
+	position:absolute;
+	top:55%;
+	left: 8%;
+}
+
+h3{
+	font-size: 35px;
+	font-family: Brush Script MT;
+}
+.cantidad{
+				color:black;
+	font-family: monospace;
+	font-weight : bold;
+		width:240px;
+
+	padding:6px;
+			position:absolute;
+	top:75%;
+	left:28%;
+}
+
+.atras{
+	position:absolute;
+	bottom:3%;
+	left:2%;
+}

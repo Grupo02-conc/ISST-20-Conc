@@ -1,0 +1,31 @@
+body{
+	background: #80CBC4;
+}
+
+h1{
+	font-family:Brush Script MT;
+	font-size: 40px;
+}
+
+.text{
+		position:absolute;
+	top:18%;
+	left: 20%;
+}
+
+.text2{
+		position:absolute;
+	top:28%;
+	left: 25%;
+}
+.button{
+		border-radius:20px;
+	padding: 8px;
+	font-size: 15px;
+	font-weight : bold;
+	background-color:#FFE57F ;
+	font-family: Verdana;
+	color:dimgray;
+	position:absolute;
+	top:92%;
+}

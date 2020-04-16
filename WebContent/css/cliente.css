@@ -1,0 +1,113 @@
+body{
+	background-image:url(../Images/Cliente.png);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+
+	position:relative;
+	
+	
+}
+
+.textAyuda{
+	width:200;
+	padding:5px;
+	height:50;
+	font-family:helvetica;
+}
+
+.registrar{
+	border-radius:10px;
+	padding: 5px;
+	font-weight : bold;
+	font-family:helvetica;
+	
+}
+.titulo{
+   position: absolute; 
+   top: 0%; 
+   left: 13%;
+    border: 2px solid #efb810;
+    padding: 10px;
+}
+
+h2{
+	font-family:monospace;
+}
+
+.text{
+	position: relative; 
+  	font-weight: bold;
+   left: 2%;
+   
+}
+
+table{
+		background-color:#5fc6c2;
+}
+.button{
+	
+	border-radius:20px;
+	padding: 8px;
+	font-size: 15px;
+	font-weight : bold;
+	background-color: #5fc6c2;
+	font-family: Verdana;
+	color:dimgray;
+	position:absolute;
+	top:130%;
+
+}
+
+table{
+	position: relative; 
+   top: 50%; 
+   left: 2%;
+}
+.pregunta{
+	position: absolute; 
+   top: 5%; 
+   right: 8%;
+   font-weight: bolder;
+   font-size: 35px;
+   color:black;
+}
+
+.textoCliente{
+ margin-top: 100px;
+ font-style: italic;
+ font-size:20px;
+}
+
+.perfil{
+
+   position: absolute; 
+   top: 30%; 
+   right: 15%;
+}
+
+.ocio{
+	
+	position: absolute; 
+   top: 45%; 
+   right: 6%;
+
+	
+}
+
+.room{
+	
+	position: absolute; 
+   top: 45%; 
+   right: 23%;
+	
+}
+
+.transporte{
+	
+	position: absolute; 
+   top: 30%; 
+   right: 30%;
+
+}
+

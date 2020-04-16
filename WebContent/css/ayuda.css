@@ -1,0 +1,18 @@
+h1{
+	font-weight : bold;
+	font-family: Copperplate;
+	color: #efb810;
+	
+}
+
+h2{
+	font-family:Courier New;
+	border: 2px solid #efb810;
+	padding: 8px;
+}
+
+.atras{
+	position:absolute;
+	bottom:3%;
+	left:2%;
+}

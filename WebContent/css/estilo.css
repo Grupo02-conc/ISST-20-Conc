@@ -1,0 +1,45 @@
+
+body{
+	
+	background-image:url(../Images/fondo.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+	padding: 10px;
+	
+}
+
+.button{
+	
+	font-size:10px;
+	font-family:Verdana,Helvetica;
+	font-weight:bold;
+	border-radius: 5px;
+	padding: 5px;
+	width:50px;
+	background: grey;
+	
+	
+}
+
+.email{
+	border-radius: 5px;
+	width:170px;
+	padding: 5px;
+	border: 1px solid black;
+	
+}
+
+.password{
+	border-radius: 5px;
+	width:170px;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.textAcceder{
+	font-color: black;
+	font-size: 100%;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}

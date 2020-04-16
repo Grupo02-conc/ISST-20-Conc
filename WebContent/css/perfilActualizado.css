@@ -1,0 +1,28 @@
+body{
+
+}
+h1{
+	font-weight : bold;
+	font-family: Copperplate;
+	color:#7FB3D5;
+}
+
+p{
+	font-family:Courier New;
+	font-size:23px;
+	border: 2px solid #7FB3D5;
+	padding: 12px;
+	margin-right:15%;
+	margin-left:15%;
+}
+.button{
+	border-radius:20px;
+	padding: 8px;
+	font-size: 15px;
+	font-weight : bold;
+	background-color:#7FB3D5 ;
+	font-family: Verdana;
+	color:dimgray;
+	position:absolute;
+	top:92%;
+}

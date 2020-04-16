@@ -1,0 +1,109 @@
+body{   
+	background: radial-gradient(salmon ,lightcoral,#7a2731);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+
+}
+
+h1{
+	position:absolute;
+	top:0%;
+	right: 37%;
+	font-size: 50px;
+}
+
+input{
+	
+	padding: 8px;
+}
+
+.solicitud{
+	border-radius: 10px;
+	padding:5px;
+	font-family: helvetica;
+}
+.textTrans{
+	position:relative;
+	margin-top: 6%;
+	left:2%;
+	font-family:helvetica;
+}
+
+.button{
+		font-family: sans-serif;
+
+	margin-bottom: 0px;
+	boder-radius: 50px;
+	position:absolute;
+	top:100%;
+	box-shadow: -5px 5px 5px #666;
+}
+
+.botonSolicitud{
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding:8px;
+	font-family: helvetica;
+	color:dimgray;
+		background-color: #F2D7D5;
+	width:160px;
+
+}
+
+.table,td{
+	aling:center;
+	text-align:center;
+}
+table{
+		background-color:#F2D7D5;
+}
+.atras{
+		position:absolute;
+	bottom:3%;
+	left:2%;
+}
+select {
+
+	width: 21%;
+	padding:5px;
+	background:#F2D7D5;
+		color:black;
+	font-family: monospace;
+	font-weight : bold;
+	
+  }
+  
+option{
+        background:#D6EAF8;
+        padding:20px;
+        font-family: helvetica;
+        font-weight : bold;
+        width:100px;
+    }
+    
+.cancTrans{
+	  font-family: helvetica;
+	   font-weight : bold;
+	   padding:5px;
+}
+    
+.fecha{
+	color:black;
+	font-family: monospace;
+	font-weight : bold;
+	align: center;
+}
+
+.destino{
+	color:black;
+	font-family: monospace;
+	font-weight : bold;
+}
+
+.comentario{
+	color:black;
+	font-family: monospace;
+	font-weight : bold;
+}

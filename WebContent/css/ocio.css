@@ -1,0 +1,131 @@
+body{
+	background: radial-gradient(#D6EAF8 ,#AED6F1,#2E86C1);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+}
+.atras{
+	position:absolute;
+	bottom:3%;
+	left:2%;
+}
+
+h1{
+	position:absolute;
+	top:-20px;;
+	right: 30%;
+	font-size: 50px;
+}
+
+.table,td{
+	aling:center;
+	text-align:center;
+
+}
+table{
+		background-color:#F5EEF8;
+				position:absolute;
+	margin-top: 12%;
+	left:20%;
+
+}
+
+select {
+
+	width: 25%;
+	padding:5px;
+	background:#F5EEF8 ;
+		color:black;
+	font-family: monospace;
+	font-weight : bold;
+		position:absolute;
+	top:30%;
+	left:8%;
+	
+  }
+  
+option{
+        background:#D6EAF8;
+        padding:20px;
+        font-family: helvetica;
+        font-weight : bold;
+        width:100px;
+    }
+    
+ input{
+	
+	padding: 5px;
+}
+
+.cancOcio{
+		  font-family: helvetica;
+	   font-weight : bold;
+	   padding:3px;
+	   width:90px;
+}
+.textOcio{
+			position:relative;
+	margin-top: 3%;
+	left:3%;
+	font-family:helvetica;
+}
+
+.textOcio2{
+	
+				position:absolute;
+	margin-top: 7%;
+	left:3%;
+	font-family:helvetica;
+	
+}
+
+.botonRegistro{
+	
+			border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding:6px;
+	font-family: helvetica;
+	font-weight : bold;
+	color:dimgray;
+		background-color:#F5EEF8  ;
+	width:300px;
+	position:absolute;
+	top:38%;
+	left:70%;
+}
+
+.fecha{
+			color:black;
+	font-family: monospace;
+	font-weight : bold;
+		width:300px;
+
+	padding:6px;
+			position:absolute;
+	top:30%;
+	left:36%;
+	
+}
+
+.precio{
+			color:black;
+	font-family: monospace;
+	font-weight : bold;
+		width:24%;
+			position:absolute;
+	top:38%;
+	left:8%;
+	padding:6px;
+}
+
+.comentarios{
+			color:black;
+	font-family: monospace;
+	font-weight : bold;
+		width:375px;
+			position:absolute;
+	top:38%;
+	left:36%;
+	padding:6px;
+}

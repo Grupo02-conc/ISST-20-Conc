@@ -1,0 +1,148 @@
+body{
+		background: radial-gradient(#d0ece7 ,#a2d9ce,#45b39d);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:100% 100%;
+}
+
+h1{
+		position:absolute;
+	top:-20px;;
+	right: 37%;
+	font-size: 50px;
+}
+
+
+
+.textRoom{
+		position:relative;
+	margin-top: 3%;
+	left:2%;
+	font-family:helvetica;
+}
+
+.textRoom2{
+			position:absolute;
+	margin-top: 3%;
+	left:3%;
+	font-family:helvetica;
+}
+.atras{
+			position:absolute;
+	bottom:3%;
+	left:2%;
+}
+
+.cancRoom{
+	  font-family: helvetica;
+	   font-weight : bold;
+	   padding:3px;
+	   width:90px;
+}
+
+.table,td{
+	aling:center;
+	text-align:center;
+
+}
+table{
+		background-color:#E5E7E9 ;
+				position:absolute;
+	margin-top: 8%;
+	left:20%;
+	
+	
+
+}
+
+select {
+
+	width: 20%;
+	padding:5px;
+	background:#E5E7E9 ;
+		color:black;
+	font-family: monospace;
+	font-weight : bold;
+		position:absolute;
+	top:-45px;
+	left:15%;
+	
+  }
+  
+option{
+        background:#D6EAF8;
+        padding:20px;
+        font-family: helvetica;
+        font-weight : bold;
+        width:100px;
+    }
+    
+ input{
+	
+	padding: 5px;
+}
+
+.registro{
+		position:relative;
+	margin-top: 6%;
+	left:2%;
+	font-family:helvetica;
+}
+
+.habitacion{
+		color:black;
+	font-family: monospace;
+	font-weight : bold;
+	position:absolute;
+	top:-45px;
+	left:0%;
+	padding:6px;
+}
+ 
+.descripcion{
+		color:black;
+	font-family: monospace;
+	font-weight : bold;
+	position:absolute;
+	top:-45px;
+	left:36%;
+	width:400px;
+	padding:6px;
+} 
+
+.fecha{
+		color:black;
+	font-family: monospace;
+	font-weight : bold;
+	width:350px;
+	position:absolute;
+	top:0px;
+	left:0%;
+	padding:6px;
+}
+
+.comentarios{
+		color:black;
+	font-family: monospace;
+	font-weight : bold;
+		width:350px;
+		position:absolute;
+	top:0px;
+	left:30%;
+	padding:6px;
+}
+
+.botonRegistro{
+		border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	padding:6px;
+	font-family: helvetica;
+	font-weight : bold;
+	color:dimgray;
+		background-color:#E5E7E9  ;
+	width:300px;
+	position:absolute;
+	top:0px;
+	left:60%;
+}
