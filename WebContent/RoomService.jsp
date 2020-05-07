@@ -29,6 +29,7 @@
 <tr>
   <td height="25" width="200" align="center"><strong>Tipo de servicio</strong></td>
   <td height="25" width="200" align="center"><strong>Fecha de entrega prevista</strong></td>
+  <td height="25" width="200" align="center"><strong>Descripcion del servicio</strong></td>
   <td height="25" width="200" align="center"><strong>Estado del servicio</strong></td>
 </tr>
 
@@ -36,11 +37,12 @@
   <c:choose>
   <c:when test="${roomServicei.forClient == cliente.dni}">
   <tr>
-  <td>${roomServicei.type}</td><td>${roomServicei.date}</td><td>${roomServicei.estado}</td>
+  <td>${roomServicei.type}</td><td>${roomServicei.date}</td><td>${roomServicei.description}</td><td>${roomServicei.estado}</td>
   <td>
   <c:choose>
 	<c:when test="${roomServicei.status == '1'}">
 		<%@ include file = "FormCancelarRoomService.jsp" %>
+		<%@ include file = "EditarRoomService.jsp" %>
 	</c:when>
 	<c:when test="${roomServicei.status == '4'}">
 		<%@ include file = "FormVerRoomServiceFinalizado.jsp" %>

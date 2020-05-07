@@ -45,6 +45,7 @@
 <c:choose>
 	<c:when test="${ocioi.status == '1'}">
 		<%@ include file = "FormCancelarOcio.jsp" %>
+		<%@ include file = "EditarOcio.jsp" %>
 	</c:when>
 	<c:when test="${ocioi.status == '4'}">
 		<%@ include file = "FormVerOcioFinalizado.jsp" %>

@@ -45,7 +45,9 @@
 <c:choose>
 	<c:when test="${ayudai.status == 1}">
 		<%@ include file = "FormCancelarSolicitud.jsp" %>
+		<%@ include file = "EditarSolicitud.jsp" %>
 	</c:when>
+
 	<c:when test="${ayudai.status == 4}">
 		<%@ include file = "FormVerSolicitudFinalizada.jsp" %>
 	</c:when>
@@ -69,13 +71,13 @@
 	</nav>
 	</div>
 	
-	<div class="ocio" align="right" >
-	<nav class="navbar sticky-top navbar-expand navbar-light bg-light">
-		<a class="navbar-brand" href="OcioServlet">
-			<img src="Images/ocio.png" height="80"/>
-		</a>
-	</nav>
-	</div>
+<div class="ocio" align="right" > -->
+<nav class="navbar sticky-top navbar-expand navbar-light bg-light"> 
+ 		<a class="navbar-brand" href="OcioServlet"> 
+ 			<img src="Images/ocio.png" height="80"/> 
+ 		</a> 
+ 	</nav> 
+ 	</div> 
 	
 	<div class="room" align="right" >
 	<nav class="navbar sticky-top navbar-expand navbar-light bg-light">

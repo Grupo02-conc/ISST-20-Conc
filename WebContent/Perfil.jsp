@@ -29,7 +29,15 @@
 <div class="textPerfil2">
 <h2>Actualizar datos del perfil</h2>
 </div>
+<div>
 <%@ include file = "FormActualizaPerfil.jsp" %>
+</div>
+
+
+<div>
+<h2>Introducir tarjeta de crédito</h2>
+</div>
+<%@ include file = "FormIntroducirTarjeta.jsp" %>
 
 
 <div class="atras">

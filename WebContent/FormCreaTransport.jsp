@@ -12,6 +12,8 @@
 		<option value="Seleccionar">Selecciona una opción</option> 
    		<option value="Taxi">Taxi</option> 
    		<option value="VTC">VTC</option> 
+   		<option value="Avion">Avion</option> 
+   		<option value="Helicoptero">Helicoptero</option> 
 	</select>
  	<input type="date" class="fecha" name="date" placeholder="Fecha" >
  	<input type="text" class="destino" name="destination" placeholder="¿A donde?">

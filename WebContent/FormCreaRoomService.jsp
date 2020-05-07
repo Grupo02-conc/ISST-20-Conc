@@ -11,10 +11,13 @@
 	<select name="type">
 		<option value="Seleccionar">Selecciona una opción</option> 
    		<option value="Compra de flores">Compra de flores</option> 
-   		<option value="Cockteleria de autor">Cockteleria de autor</option> 
+   		<option value="Cockteleria de autor">Cockteleria de autor</option>
+   		<option value="Servicio de tintoreria">Servicio de tintoreria</option>
+   		<option value="Compra de jamon">Compra de jamon</option>
+   		<option value="Servicio de peluqueria y barberia">Servicio de peluqueria y barberia</option> 
 	</select>
 	<input type="text" class="descripcion" name="description" placeholder="Realice una descripcion de su pedido">
-	<input type="text" class="fecha" name="date" placeholder="¿Para cuándo desea el servicio?">
+	<input type="date" class="fecha" name="date" placeholder="¿Para cuándo desea el servicio?">
 	<input type="text" class="comentarios" name="addComents" placeholder="Comentarios adicionales">
 	<button class="botonRegistro">Registrar servicio de habitación</button>
 	<select name="status" style="display:none"><option value="1"></option></select>

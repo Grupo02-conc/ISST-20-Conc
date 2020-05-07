@@ -44,6 +44,8 @@
 <c:choose>
 	<c:when test="${transporti.status == '1'}">
 		<%@ include file = "FormCancelarTransporte.jsp" %>
+		<%@ include file = "EditarTransport.jsp" %>
+		
 	</c:when>
 	<c:when test="${transporti.status == '4'}">
 		<%@ include file = "FormVerTransporteFinalizado.jsp" %>
