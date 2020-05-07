@@ -50,7 +50,7 @@ public class FormActualizaPerfilServlet extends HttpServlet {
 		cliente.setEmail(new_email);
 		cliente.setPassword(new_password);
 		cliente.setName(name);
-		cliente.setDNI(dni);
+		cliente.setDni(dni);
 		cliente.setRoom(room);
 		cliente.setTlf(tlf);
 		

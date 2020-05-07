@@ -7,57 +7,46 @@ import javax.persistence.Query;
 
 import org.hibernate.Session;
 
-import es.upm.dit.isst.conc.model.Ayuda;
+import es.upm.dit.isst.conc.model.Tarjeta;
 
-public class AyudaDAOImplementation implements AyudaDAO {
+public class TarjetaDAOImplementation implements TarjetaDAO {
 
-	private static  AyudaDAOImplementation instancia = null;
-	private AyudaDAOImplementation() {
+	private static  TarjetaDAOImplementation instancia = null;
+	private TarjetaDAOImplementation() {
 	}
 
-	public static AyudaDAOImplementation getInstance() {
+	public static TarjetaDAOImplementation getInstance() {
 		if( null == instancia ) 
-			instancia = new AyudaDAOImplementation();
+			instancia = new TarjetaDAOImplementation();
 		return instancia;
 	}
 	
 	@SuppressWarnings("unchecked")
 	@Override
-	public void create(Ayuda ayuda) {
+	public void create(Tarjeta tarjeta) {
 		  Session session = SessionFactoryService.get().openSession();
 		  session.beginTransaction();
-		  session.save(ayuda);
+		  session.save(tarjeta);
 		  session.getTransaction().commit();
 		  session.close();
 	}
 	
 	@SuppressWarnings("unchecked")
 	@Override
-	public Ayuda read(String descripcion) {
+	public Tarjeta read(String numero) {
 		  Session session = SessionFactoryService.get().openSession();
 		  session.beginTransaction();
-		  Ayuda c = session.get(Ayuda.class, descripcion);
-		  session.getTransaction().commit();
-		  session.close();
-		return c;
-	}
-	
-	@SuppressWarnings("unchecked")
-	@Override
-	public Ayuda leer(String nAyuda) {
-		  Session session = SessionFactoryService.get().openSession();
-		  session.beginTransaction();
-		  Ayuda c = session.get(Ayuda.class, nAyuda);
+		  Tarjeta c = session.get(Tarjeta.class, numero);
 		  session.getTransaction().commit();
 		  session.close();
 		return c;
 	}
 
 	@Override
-	public void update(Ayuda ayuda) {
+	public void update(Tarjeta tarjeta) {
 		  Session session = SessionFactoryService.get().openSession();
 		  session.beginTransaction();
-		  session.saveOrUpdate(ayuda);
+		  session.saveOrUpdate(tarjeta);
 		  session.getTransaction().commit();
 		  session.close();
 
@@ -65,10 +54,10 @@ public class AyudaDAOImplementation implements AyudaDAO {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public void delete(Ayuda ayuda) {
+	public void delete(Tarjeta tarjeta) {
 		  Session session = SessionFactoryService.get().openSession();
 		  session.beginTransaction();
-		  session.delete(ayuda);
+		  session.delete(tarjeta);
 		  session.getTransaction().commit();
 		  session.close();
 
@@ -76,13 +65,13 @@ public class AyudaDAOImplementation implements AyudaDAO {
 	
 	@SuppressWarnings("unchecked")
 	@Override
-	public Collection<Ayuda> readAll() {
+	public Collection<Tarjeta> readAll() {
 		  Session session = SessionFactoryService.get().openSession();
 		  session.beginTransaction();
-		  List<Ayuda> ayudas = session.createQuery("from Ayuda").list();
+		  List<Tarjeta> tarjetas = session.createQuery("from Tarjeta").list();
 		  session.getTransaction().commit();
 		  session.close();
-		return ayudas;
+		return tarjetas;
 	}
 
 	

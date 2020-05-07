@@ -15,7 +15,7 @@ public class Ocio implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	private String nReserva;
+	private String nReserva; 
 	private String dni;
 	private String actividad;
 	private String fecha;

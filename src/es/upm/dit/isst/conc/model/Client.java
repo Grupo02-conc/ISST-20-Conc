@@ -11,6 +11,10 @@ import javax.persistence.OneToMany;
 @Entity
 public class Client implements Serializable {
 	
+	public Client() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -20,43 +24,45 @@ public class Client implements Serializable {
 	private String tlf;
 	private String dni;
 	private String room;
-	
-	
-
-	public Client() {
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public String getName() {
+		return name;
+	}
+	public String getTlf() {
+		return tlf;
+	}
+	public String getDni() {
+		return dni;
+	}
+	public String getRoom() {
+		return room;
 	}
 
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 	public void setTlf(String tlf) {
 		this.tlf = tlf;
 	}
-	
-	public void setDNI(String dni) {
+	public void setDni(String dni) {
 		this.dni = dni;
 	}
-	
 	public void setRoom(String room) {
 		this.room = room;
-	}
-
-	
-
-	
-	@Override
-	public String toString() {
-		return "Client [email=" + email + ", password=" + password + ", name=" + name + ", tlf=" + tlf + ", dni=" + dni
-				+ ", room=" + room + "]";
 	}
 
 	@Override
@@ -71,7 +77,6 @@ public class Client implements Serializable {
 		result = prime * result + ((tlf == null) ? 0 : tlf.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -113,35 +118,15 @@ public class Client implements Serializable {
 			return false;
 		return true;
 	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
+	@Override
+	public String toString() {
+		return "Client [email=" + email + ", password=" + password + ", name=" + name + ", tlf=" + tlf + ", dni=" + dni
+				+ ", room=" + room + "]";
 	}
+	
+	
 
-	public String getEmail() {
-		return email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public String getTlf() {
-		return tlf;
-	}
-
-	public String getDni() {
-		return dni;
-	}
-
-	public String getRoom() {
-		return room;
-	}
-
+	
 	
 
 	

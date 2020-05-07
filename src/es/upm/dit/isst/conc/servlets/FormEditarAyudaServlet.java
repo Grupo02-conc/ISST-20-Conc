@@ -12,16 +12,16 @@ import javax.servlet.http.HttpServletResponse;
 
 import es.upm.dit.isst.conc.dao.AyudaDAOImplementation;
 import es.upm.dit.isst.conc.dao.ClientDAOImplementation;
-
+import es.upm.dit.isst.conc.dao.AyudaDAOImplementation;
 import es.upm.dit.isst.conc.model.Ayuda;
 import es.upm.dit.isst.conc.model.Client;
-
+import es.upm.dit.isst.conc.model.Ayuda;
 
 /**
- * Servlet implementation class FormCreaProfesorServlet
+ *
  */
-@WebServlet("/FormAyudaServlet")
-public class FormAyudaServlet extends HttpServlet {
+@WebServlet("/FormEditarAyudaServlet")
+public class FormEditarAyudaServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
        
@@ -29,38 +29,39 @@ public class FormAyudaServlet extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
 	
-    public FormAyudaServlet() {
+    public FormEditarAyudaServlet() {
         super();
     }
     
     @Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    	  
+    	
+    	String nAyuda = req.getParameter("nAyuda");
+		String des = req.getParameter("des");
 		String descripcion = req.getParameter("descripcion");
-		String nAyuda = req.getParameter("nAyuda");
 		String dni = req.getParameter("forClient");
 		String estado = "solicitado";
+
+		
+		Ayuda a = AyudaDAOImplementation.getInstance().read(descripcion);
+		AyudaDAOImplementation.getInstance().delete(a);
 		
 		Ayuda ayuda = new Ayuda();
-		ayuda.setDescripcion(descripcion);
+		ayuda.setDescripcion(des);
 		ayuda.setnAyuda(nAyuda);
 		ayuda.setEstado(estado);
 		ayuda.setDni(dni);
 		ayuda.setStatus(1);
 		
 		AyudaDAOImplementation.getInstance().create(ayuda);
-		/*List<Ayuda> lp = new ArrayList<Ayuda>();
-		lp.addAll((List<Ayuda>)
-		req.getSession().getAttribute("Ayudas"));
-		lp.add (ayuda);
-		req.getSession().setAttribute("Ayuda", lp);*/
+		
 		List<Client> clientes = (List<Client>) ClientDAOImplementation.getInstance().readAll();
-		List<Ayuda> ayudas = (List<Ayuda>) AyudaDAOImplementation.getInstance().readAll();
-
-		req.getSession().setAttribute("ayudas", ayudas);	//Para poder sacarlo en el .jsp
-		req.getSession().setAttribute("clientes", clientes);
-		getServletContext().getRequestDispatcher("/AyudaRegistrada.jsp").forward(req,resp);
+    	List<Ayuda> ayudas = (List<Ayuda>) AyudaDAOImplementation.getInstance().readAll();
+    	req.getSession().setAttribute("ayudas", ayudas); 
+    	req.getSession().setAttribute("clientes", clientes);
+             
+              getServletContext().getRequestDispatcher("/SolicitudEditada.jsp")
+             .forward(req,resp);
 	}
-
-
-
 }

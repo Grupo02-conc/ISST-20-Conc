@@ -10,6 +10,6 @@ public interface ClientDAO {
 	public void update(Client client);
 	public void delete(Client client);
 	public Collection<Client> readAll();
-	public Client login(String email, String psd);
+	public Client login(String dni, String room);
 
 }

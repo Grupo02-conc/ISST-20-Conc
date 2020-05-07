@@ -43,7 +43,7 @@ public class FormCreaClienteServlet extends HttpServlet {
 		client.setPassword(password);
 		client.setName(name);
 		client.setTlf(tlf);
-		client.setDNI(dni);
+		client.setDni(dni);
 		client.setRoom(room);
 		
 		

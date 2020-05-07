@@ -76,13 +76,13 @@ public class ClientDAOImplementation implements ClientDAO {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public Client login(String email, String password) {
+	public Client login(String dni, String room) {
 		  Session session = SessionFactoryService.get().openSession();
 		  session.beginTransaction();
 		  Client c = null;
-		  Query q = session.createQuery("select c from Client c where c.email = :email and c.password = :password");
-		  q.setParameter("email", email);
-		  q.setParameter("password", password);
+		  Query q = session.createQuery("select c from Client c where c.dni = :dni and c.room = :room");
+		  q.setParameter("dni", dni);
+		  q.setParameter("room", room);
 		  List<Client> clients = q.getResultList();
 		  if (clients.size() > 0)
 		  	c = (Client) (q.getResultList().get(0));

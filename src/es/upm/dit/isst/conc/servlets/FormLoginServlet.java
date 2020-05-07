@@ -33,13 +33,13 @@ private static final long serialVersionUID = 1L;
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String email = req.getParameter("email");
-		String password = req.getParameter("password");
+		String dni = req.getParameter("dni");
+		String room = req.getParameter("room");
 		
 		List<Client> clientes = (List<Client>) ClientDAOImplementation.getInstance().readAll();
 		List<Ayuda> ayudas = (List<Ayuda>) AyudaDAOImplementation.getInstance().readAll();
-		Client client = ClientDAOImplementation.getInstance().login(email, password);
-		if( ADMIN_EMAIL.equals(email) && ADMIN_PASSWORD.equals(password) ) {
+		Client client = ClientDAOImplementation.getInstance().login(dni, room);
+		if( ADMIN_EMAIL.equals(dni) && ADMIN_PASSWORD.equals(room) ) {
 			req.getSession().setAttribute("admin", true);
 			req.getSession().setAttribute("clientes", clientes);
 			getServletContext().getRequestDispatcher("/Admin.jsp").forward(req,resp);

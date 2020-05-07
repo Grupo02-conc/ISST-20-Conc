@@ -19,5 +19,6 @@
 		<mapping class="es.upm.dit.isst.conc.model.RoomService" />
 		<mapping class="es.upm.dit.isst.conc.model.Ocio"/>
 		<mapping class="es.upm.dit.isst.conc.model.Ayuda"/>
+		<mapping class="es.upm.dit.isst.conc.model.Tarjeta"/>
 	</session-factory>
 </hibernate-configuration>
